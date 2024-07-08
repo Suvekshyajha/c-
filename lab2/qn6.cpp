@@ -18,6 +18,11 @@ class Student{
 		 	id=i;
 		 	marks=m;
 		 }
+ Student(Student &t){
+	 id=t.id;
+	 marks=t.marks;
+ }
+
 		 void display(){
 		 	cout<<"id:"<<id<<endl;
 		 	cout<<"marks:"<<marks<<endl;
